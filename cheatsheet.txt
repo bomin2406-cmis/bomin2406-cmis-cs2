@@ -1,0 +1,13 @@
+cloning: git clone --config="http.proxy=http://bomin2406:baomin99@192.168.2.1:8080" https://github.com/bomin2406-cmis/bomin2406-cmis-cs2.git
+cd: entering a file 
+ls: listing the contents of a file
+gedit: open a file OR create a new file
+python <filename> : python the file...
+
+git add <filename> :saving it to repository
+git commit -m "<Coment>" :adding comment to what you did
+git push : push that file into your repository
+
+PYTHON
+str(variable) :making it a string
+
