@@ -37,9 +37,9 @@ print halfTheVolumeCube #print half of the volume of my cube
 oneNinthOfArea = areaOfSquare / 9 #compute one ninth of the area of my square
 print oneNinthOfArea #print one ninth of the area of my square
 
-print "My name is" + " " + str(myName) + "." " " "I am" + " " + str(myAgeInYears) + " " + "years old." " " + "I think I'll die when I am" + " " + str(myAgeOfDeath) + " years old." " " "I have" + " " + str(yearsLeftToLive) + " " + "years left to live." " " "My height in meters is" + " " + str(myHeightInMeters) + "." #print a message using 5 of the variables I've created
+print "My name is ",myName,"."" I am ",myAgeInYears," years old."" I think I'll die when I am ",myAgeOfDeath," years old." " I have ",yearsLeftToLive," years left to live."" My height in meters is ",myHeightInMeters,"." #print a message using 5 of the variables I've created
 
-print "My name is ", str(myName) ,". I am ", str(myAgeInYears) " years old." " I think I'll die when I am ", str(myAgeOfDeath), " years old." " I have ", str(yearsLeftToLive) , " years left to live." " My height in meters is " , str(myHeightInMeters) , "." " In feet, my height is " , str(myHeightInFeet) , "." " If one side of a square is " , str(sideOfSquareInMeters) , "," " area of this square is " + str(areaOfSquare) + "." " If it is not a square, and is a cube, then the volume is " + str(volumeOfCube) + " meters cubed." " Half of that volume would be " + str(halfTheVolumeCube) + " meters cubed." #print a second message using 10 of the variables I've created
+print "My name is ",myName,". I am ",myAgeInYears," years old." " I think I'll die when I am ",myAgeOfDeath," years old." " I have ",yearsLeftToLive," years left to live." " My height in meters is ",myHeightInMeters,". In feet, my height is ",myHeightInFeet,". If one side of a square is " ,sideOfSquareInMeters, ", area of this square is ",areaOfSquare,". If it is not a square, and is a cube, then the volume is ",volumeOfCube," meters cubed." " Half of that volume would be ",halfTheVolumeCube," meters cubed." #print a second message using 10 of the variables I've created
 
 winkingSmileyFaces = ";)" #winking smiley face as a string
 tenthousandOfThem = ";)" * 10000 #compute 10000 of the winking smiley faces
