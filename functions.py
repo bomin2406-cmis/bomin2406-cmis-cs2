@@ -79,8 +79,24 @@ box2= msg_box("LALALALLALALALA")
 
 
 
-print msg_box(add1)
-print msg_box(add2)
-
-
-
+print msg_box(str(add1))
+print msg_box(str(add2))
+print msg_box(str(sub1))
+print msg_box(str(sub2))
+print msg_box(str(mul1))
+print msg_box(str(mul2))
+print msg_box(str(div1))
+print msg_box(str(div2))
+print msg_box(str(hours1))
+print msg_box(str(hours2))
+print msg_box(str(circle1))
+print msg_box(str(circle2))
+print msg_box(str(sphere1))
+print msg_box(str(sphere2))
+print msg_box(str(avg1))
+print msg_box(str(avg2))
+print msg_box(str(area1))
+print msg_box(str(area2))
+print right1
+print right2
+pringt
