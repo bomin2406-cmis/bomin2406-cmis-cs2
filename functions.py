@@ -50,7 +50,7 @@ def msg_box(a): #create a message box
 
 
 
-
+#Defining one additional variable for each of the functions I made
 
 add1= add(1,2)
 add2= add(2,3)
