@@ -97,6 +97,12 @@ print msg_box(str(avg1))
 print msg_box(str(avg2))
 print msg_box(str(area1))
 print msg_box(str(area2))
-print right1
-print right2
-pringt
+print msg_box(str(align1))
+print msg_box(str(align2))
+print msg_box(str(center1))
+print msg_box(str(center2))
+print msg_box(str(box1))
+print msg_box(str(box2))
+
+
+
