@@ -7,7 +7,7 @@ def sub(a, b): #compute the difference between a and b
 def mul(a,b): #compute the multiplication of a and b
 	return a*b
 
-def div(a,b): #creating formula so then the cpu can divide
+def div(a,b): #compute the division of a and b 
 	return a/b 
 
 
@@ -27,8 +27,8 @@ def sphere_volume(a):#compute the volume of the sphere with the given radius
 def avg_volume (a,b): #compute the average volume of the spheres
 	c= a/2
 	d= b/2
-	y= 1.3333333333333*math.pi*c*c*c
-	z= 1.333333333333*math.pi*d*d*d
+	y= sphere_volume(c)
+	z= sphere_volume(d)
 	return (y+z)/2
 
 
