@@ -9,6 +9,7 @@
 #
 #3 1pt) What does the keyword "return" do?
 #Return calls a function; it gives the output, as it processes with the given input.
+	#It does NOT call a function!
 #
 #
 #4 5pts) We know 5 basic data types. Write the name for each one and provide two
@@ -18,6 +19,7 @@
 #	3: string ("Me" "You")
 #	4: tuple ("Bomin", 5, 6.777)
 #	5: boolean (True, False)
+	# Only one example for tuple!
 #
 #5 2pts) What is the difference between a "function definition" and a 
 #        "function call"?
