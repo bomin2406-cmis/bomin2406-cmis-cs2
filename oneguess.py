@@ -1,3 +1,10 @@
+def output():
+	out= 
+def main():
+    miniNo= raw_input("What is the minimum number?:")
+    maxiNo= raw_input("What is the maximum number?:")
+	
+main()
 
 def output(target, guess, ):
     out = """
@@ -6,18 +13,6 @@ Your guess was {}.
 That's under by {}.
 """.format(name, x, y, z)
     return out
-
-
-def main():
-    miniNo= raw_input("What is the minimum number?:")
-    maxiNo= raw_input("What is the maximum number?:")
-main()
-
-
-def output(miniNo, maxiNo):
-    out = """
-I'm thinking of a number from {} to {}.
-""".format(miniNo, maxiNo)
 
 def main():
     guess= raw_input("What do you think it is?:")
