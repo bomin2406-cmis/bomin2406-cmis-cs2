@@ -3,41 +3,34 @@
 import random
 
 def randomize(first, second):
-	return random.randint(first, second)
+    return random.randint(first, second)
 
 def differenceOfGuessAndTarget(g,t):
-	return abs(g-t)
+    return abs(g-t)
 
 def main():
-	miniNo = raw_input("What is the minimum number?:")
-	maxiNo = raw_input("What is the maximum number?:")
-	output = """I'm thinking of a number from {} to {}.""".format(miniNo, maxiNo)
-	print output
-	guess= raw_input("What do you think it is?:")
-	out = guess
-	print out
+    miniNo = raw_input("What is the minimum number?:")
+    maxiNo = raw_input("What is the maximum number?:")
+    output = """I'm thinking of a number from {} to {}.""".format(miniNo, maxiNo)
+    print output
+    guess= raw_input("What do you think it is?:")
 
-	target = randomize(int(miniNo), int(maxiNo))
-	difference= differenceOfGuessAndTarget(int(guess),int(target))
+    target = randomize(int(miniNo), int(maxiNo))
+    difference= abs(int(guess) - int(target))
 
-	output= """The target was {}.
-	Your guess was {}.
-	That's under by {}.
-	""".format(target, guess, difference)
-main()
+    print output
+    if int(guess) == target:
+        msg = "YOU GOT IT!"
+    if int(guess) > target:
+        msg = ("You are over by ", abs(int(guess) - target)
+    if int(guess) < int(target):
+        msg = ("It's under by ", abs(int(guess) - target)
 
-#the second part
-
-def output(target, guess, d):
-    out = """
-The target was {}.
+    output= """The target was {}.
 Your guess was {}.
-That's under by {}.
-""".format(target, guess, d)
+{}.
+""".format(target, guess, msg)
 
-def main():
-    target= randomize(miniNo, maxiNo)
-    d= differenceOfGuessAndTarget(guess,target)
-    out= output(target, d)
-    print out
 main()
+
+
