@@ -1,31 +1,27 @@
-#Input
-n= "Bomin"
-x=3
-y=4
+def add(x, y):
+	return x + y
 
-#Processing
-z= int(x) + int(y)
+def output(name, firstNo, secondNo, sumOfNos):
+	out = """
+Heyya {}!
+Did you know???
+that {} + {} = {} ?!?!
+""". format(name, firstNo, secondNo, sumOfNos)
+	return out
 
-#Input
-a=1
-b=2
+def main():
+	#INPUT!
+	name= raw_input("What's your name?:")
+	firstNo= raw_input("Type a number:")
+	secondNo= raw_input("Type another one:")
 
-#Processing
-c=int(1) * int(2)
+	#PROCESSING!
+	sumOfNos= add(int(firstNo), int(secondNo))
 
-#Input
-z= "and that"
+	#OUTPUT!!!!
+	out = output(name, firstNo, secondNo, sumOfNos)
+	print out
 
-
-output = """
-Hey {}!
-Did you know:
-{} + {} = {}
-{}
-{} * {} = {}
-""". format(n, x, y, z, z, a, b, c)
-
-
-print output
+main()
 
 
