@@ -5,8 +5,8 @@ import random
 def randomize(first, second):
 	return random.randint(first, second)
 
-def differenceOfGuessAndTarget(g,t):
-	return abs(g-t)
+def differenceOfGuessAndTarget(guess,target):
+	return abs(guess - target)
 
 def main():
 	miniNo = raw_input("What is the minimum number?:")
