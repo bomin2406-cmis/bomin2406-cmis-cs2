@@ -1,25 +1,28 @@
-def add(x, y):
-	return x + y
+def average(x, y):
+	return (x + y)/2
 
-def output(name, firstNo, secondNo, sumOfNos):
+def output(name, yourAge, yourMomsAge, avgOfNos):
 	out = """
 Heyya {}!
 Did you know???
 that {} + {} = {} ?!?!
-""". format(name, firstNo, secondNo, sumOfNos)
+
+So basically,
+that's the average of your mom and your age!!!!
+""". format(name, yourAge, yourMomsAge, avgOfNos)
 	return out
 
 def main():
 	#INPUT!
 	name= raw_input("What's your name?:")
-	firstNo= raw_input("Type a number:")
-	secondNo= raw_input("Type another one:")
+	yourAge= raw_input("Ok. What's your age?:")
+	yourMomsAge= raw_input("What about your mom's?:")
 
 	#PROCESSING!
-	sumOfNos= add(int(firstNo), int(secondNo))
+	avgOfNos= average(int(yourAge), int(yourMomsAge))
 
 	#OUTPUT!!!!
-	out = output(name, firstNo, secondNo, sumOfNos)
+	out = output(name, yourAge, yourMomsAge, avgOfNos)
 	print out
 
 main()
