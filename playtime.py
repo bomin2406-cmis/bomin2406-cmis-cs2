@@ -38,54 +38,49 @@ main()
 
 
 
-
-
-
-
-
-
-
-def adder(number):
-	return runningtotal + number
-
-
-intro = "Running total : 0"
-def output1(sumOfNos):
-	out = """
-The sum is {}.""".format(sumOfNos)
-
-def output2(added):
-	out = """
-Next Number: {}
-""".format(added)
-
-
-def adder(number):
-	print intro
-	
-	no = float(raw_input("Next number:"))
-	if no == "":
-		print output1
-	else:
-		added = adder(no)
-		print output2
-
-
+def adder(stuff, total):
+    if stuff == "":
+        return total
+    else:
+        total += float(stuff) 
+        stuff = raw_input("Running total: " + str(total) + "\nNext number: ")
+        return adder(stuff, total)
 
 def main():
-	print intro
-	
-	no = float(raw_input("Next number:"))
-	if no == "":
-		print output1
-	else:
-		added = adder(no)
-		print output2
-
+    out = adder(0, 0)
+    print "The sum is " + str(out)
 main()
+
+
+
+
+
+def adder2(total):
+	total = 0
+	print "Running total " + str(number)
+	innum = raw_input("Next number: ")
+	if innum == '':
+		print "Running total " + str(innum)
+	else:
+		total += float(innum)
+		adder2(total)
+
+
+
+def adder(no, runningtotal):
+
+	if no == "":
+		print "Running total " + str(runningtotal)
+		exit()
+	else:
+		runningtotal += float(no)
+		print "Running total " + str(runningtotal)
+		no = raw_input("Next number: ")
 		
 
-
-
+def main():
+#	adder(0, 0)
+	adder2(0)
+main()
 
 
