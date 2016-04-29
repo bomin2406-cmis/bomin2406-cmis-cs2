@@ -17,24 +17,24 @@ main()
 
 
 #BIGGEST
-def biggest(no, BIG):
-	if no >= BIG:
-		BIG = no
-		no = raw_input("Next number:")
-		print biggest(no, BIG)
-	elif no == "":
+
+def biggest(BIG):
+#Here, previousno is basically the biggest number you typed UNTIL NOW.
+	no = raw_input("Next number:")
+	if no == "":
 		return BIG
-biggest(no, BIG)
 
+	else:
+		if no >= BIG:
+			BIG = no
+			print biggest(BIG)
+		elif no < BIG:
+			print biggest(BIG)
+	
 		
-def main():
-	biggest(0, 0)
-	print "The biggest number is " + str(BIG)
-main()
 
-
-
-
+biggest(-float('Inf'))
+	
 
 
 
