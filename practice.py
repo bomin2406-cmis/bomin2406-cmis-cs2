@@ -8,10 +8,6 @@ def adder(no, runningtotal):
         no = raw_input("Running total: " + str(runningtotal) + "\nNext number: ")
         return adder(no, runningtotal)
 
-def main():
-    out = adder(0, 0)
-    print "The sum is " + str(out)
-main()
 
 
 
@@ -33,7 +29,45 @@ def biggest(BIG):
 	
 		
 
-biggest(-float('Inf'))
+
+
+
+
+#SMALLEST
+
+
+
+
+
+#POW
+
+def pow(number, times):
+	if times == 0:
+		return 1
+	else:
+		return number * pow(number, times-1)
+
+
+
+
+
+
+
+
+
+
+
+
+#MAIN MAIN MAINNN
+def main():
+	#out = adder(0, 0)
+	#print "The sum is " + str(out)
+	#print biggest(-float('Inf'))
+	print pow(2, 3)
+
+main()
+
+	
 	
 
 
