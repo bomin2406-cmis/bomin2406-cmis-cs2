@@ -1,7 +1,10 @@
 import random
 
-
 def intro()
+	name = raw_input("So. What's your name..?:")
+	out = """There's someone here, at this hospital full of patients and doctors...tensed up. They are all staring at one thing, and it is, a bomb. The countdown has started: 1 minute remaining. There's no time to spare. That person in the middle is holding it - everything, EVERYTHING depends on him. 
+{}. That's you.""".format(name)
+	return out
 
 def randomize()
 
@@ -9,15 +12,10 @@ def cut1
 
 def cut2
 def intro():
-	name = raw_input("So. What's your name..?:")
-	out = """There's someone here, at this hospital full of patients and doctors...tensed up. They are all staring at one thing, and it is, a bomb. The countdown has started: 1 minute remaining. There's no time to spare. That person in the middle is holding it - everything, EVERYTHING depends on him. 
-""".format()
-	return out
 
-	out= """{}. That's you.""".format()
-	return out
 
-	print "You are looking at the bomb right now. There are three circuits attached on the bomb. Right? And, they are: Red, Blue, and Green."
+
+	print "You are looking at the bomb right now. There are three circuits attached on the bomb. Right? And, they are: red, blue, and green."
 
 	cut1 = raw_input("Type the color of the circuit that you would like to cut, ALL IN LOWER CASE:")
 		if cut == "red":
