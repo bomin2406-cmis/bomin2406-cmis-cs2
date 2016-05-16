@@ -1,18 +1,24 @@
 import random
 
+
+# RULES
+#	conditional execution-1
 def rules():
 	print "HI! I MADE THIS GAME! AND I AM BOMIN!"
-	rulesorno = raw_input:("You wanna hear the rules? (yes/no):")
-	if rulesorno == "yes":
-		print "You CANNOT write in capital letters. ALL of them should be LOWERCASED."
-	else:
+	rulesorno = raw_input("You wanna hear the rules? (yes/no):")
+	if rulesorno == "yes" or rulesorno == "no":
+		print "You have to know anyways, so yeah. You CANNOT write in capital letters. ALL of them should be LOWERCASED."
+
 	
-#1. introduction
+
+
+#introduction
+#	conditional execution-2
 def intro():
 	name = raw_input("So. What's your name..?:")
 
-	if name == "Innhye"
-		print "Ew. You can't play this game."
+	if name == "Innhye":
+		print "GAME OVER"
 		exit()
 
 	out = """Clock is ticking. Patients, doctors, staffs,,,,they are all standing still, 
@@ -30,7 +36,7 @@ There's a person in the middle, at this hospital full of patients and doctors...
 def firstcut():
 	print "You are looking at the bomb right now. There are three circuits attached on the bomb. Right? And, they are: red, blue, and green."
 
-	cut1 = raw_input("Type the color of the circuit that you would like to cut, ALL IN LOWER CASE:")
+	cut1 = raw_input("Type the color of the circuit that you would like to cut:")
 	if cut1 == "red":
 		cut1 = 1
 		return cut1
@@ -42,10 +48,19 @@ def firstcut():
 		return cut1
 
 
+	if cut1 >= int(explosion) or cut1 <= int(explosion):
+		sureornot = raw_input:("HA. You sure about that? (yes/no):")
+		if sureornot == "yes" and sureornot == "no":
+			cut1 = raw_input:("NO YOU'RE NOT. OF COURSE YOU AREN'T SURE... Type the color again...:")
+
+	
+	
+
+
 
 
 #4. dead or alive???!!!
-#	alternative execution
+#		alternative execution -1
 def deadoralive1(cut1, explosion):
 	if str(cut1) == explosion:
 		print "BOOM. YOU'RE DEAD."
@@ -79,7 +94,7 @@ def secondcut():
 
 
 #6. deadoralive 2!!!!
-#	alternative execution
+#		alternative execution -2
 def deadoralive2(cut2, explosion):
 	if str(cut2) == explosion:
 		print "BOOM. YOU'RE DEAD."
