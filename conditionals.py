@@ -18,20 +18,19 @@ def rules():
 
 
 #introduction
-#	conditional execution-2
+
 #	str.format()
 #	""" """
 def intro():
 	name = raw_input("So. What's your name..?:")
 
-	if name == "Innhye":
-		print "GAME OVER"
-		exit()
+	if not name == "Innhye":
+		print "Hi there..."
+
 
 	out = """Clock is ticking. Patients, doctors, staffs,,,,they are all standing still, 
 staring at one thing,,,, and it is, a bomb. The countdown has started: 30 seconds remaining... There's no time to spare. 
 There's a person in the middle, at this hospital full of patients and doctors...tensed up. That person is holding it - everything, EVERYTHING depends on that person. 
-
 {}. That's you.""".format(name)
 	print out
 
@@ -97,6 +96,7 @@ def deadoralive1(cut1, explosion):
 
 #5. second cut!!!!!!!
 #		chained conditionals-3
+#conditional execution-2
 def secondcut(explosion):
 	print "\nNow you have two circuits left. One will stop the timer, and another one will make it explode...what's your choice?"
 
