@@ -32,6 +32,7 @@ def countFrom(beginning, end):
 			print beginning
 			beginning += 1
 
+
 def sumOfOdds(x):
 	total = 0
 	if x > 0:
@@ -54,7 +55,17 @@ def sumOfOdds(x):
 	print total
 
 
-		
+	
+def grid(w, h):
+	out = ""
+	while h > 0:
+		while w > 0:
+			out += "."
+			print out
+			w -= 1
+			print out + "\n" 
+		h -= 1
+
 
 			
 
@@ -64,7 +75,9 @@ def sumOfOdds(x):
 
 def main():
 #	count_down(10)
-#	counter(5)
-	sumOfOdds(9)
+#	counter(-5)
+#	sumOfOdds(5)
+#	countFrom(-5, 0)
+	grid(10, 10)
 
 main()
