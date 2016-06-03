@@ -1,33 +1,33 @@
-
-
 import random
 
+def rounds(roundno, pointsearned):
+	if roundno == 0:
+		out1 = """I got {} rounds correct.""".format(pointsearned)
+		return out1
+	else:
+		out2 = """Round {}""".format(roundno)
+		print out2
+		pointsearned += eachguess(random.randint(1, 100), 5)
+		return rounds(roundno -1, pointsearned)
 
-def guess_the_no():
-#round #
-	roundno = 3
-	points = 0
-
-
-	print "Round number " + str(roundno)
-
-#randomizing between 1 and 100
-	target = random.randint(1, 100)
-	
-#asks for the number
-	no = int(raw_input("What is the number?:"))
-
-#is it high or low
-	if no > target:
-		print "It's too high!"
-	elif no < target:
-		print "It's too low!"
-	elif no == target:
-		return "YOU GOT IT RIGHT MAN"
-		points = points + 1
+def eachguess(randomized, trials):
+	yourguess = int(raw_input("Guess a number:"))
+	if yourguess == randomized:
+		print "CORRECT\n"
+		return 1
+	elif trials == 1:
+		print "You are not good at this game."
+		return 0
+	elif yourguess > randomized:
+		print "TOO HIGH."
+		return eachguess(randomized, trials -1)
+	elif yourguess < randomized:
+		print "TOO LOW."
+		return eachguess(randomized, trials -1)
 
 
 
-#how many points u have
-	print "You got " + str(points) + "of these right!!"
-	 
+def main():
+	print rounds(1, 0)
+
+main()
